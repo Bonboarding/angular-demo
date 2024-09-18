@@ -10,8 +10,11 @@ import { UserService } from '../services/user.service';
   imports: [CommonModule, RouterModule],
   template: `
     <div class="h-full flex flex-col w-64 bg-gray-800">
-      <div class="flex items-center justify-center h-20 shadow-md">
-        <h1 class="text-3xl uppercase text-white">Logo</h1>
+      <div class="flex items-center justify-center h-16 shadow-md">
+        <h1 class="flex justify-center">
+          <span class="sr-only">Bonboarding Integration Demo</span>
+          <img src="/logo-dark.png" alt="Logo" class="h-12">
+        </h1>
       </div>
       <ul class="flex-grow flex flex-col py-4">
         <li *ngFor="let item of menuItems">

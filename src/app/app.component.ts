@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   template: '<router-outlet></router-outlet>'
 })
 export class AppComponent {
-  title = 'angular-login-dashboard';
+  title = 'Bonboarding Integration Demo';
 }

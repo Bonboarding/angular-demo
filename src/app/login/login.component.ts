@@ -11,6 +11,9 @@ import { UserService } from '../services/user.service';
   template: `
     <div class="flex items-center justify-center min-h-screen bg-gray-100">
       <div class="p-6 max-w-sm w-full bg-white shadow-md rounded-md">
+        <div class="flex justify-center mb-4">
+          <img src="/logo-light.png" alt="Logo" class="h-16">
+        </div>
         <h2 class="text-2xl font-bold text-center text-gray-700 mb-8">Login</h2>
         <form (ngSubmit)="onSubmit()">
           <div class="mb-4">
