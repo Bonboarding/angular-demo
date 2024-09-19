@@ -1,27 +1,29 @@
-# AngularBonboarding
+# Angular Integration Demo for Bonboarding
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+This project is a demo of how to integrate [Bonboarding](https://bonboarding.com) with an Angular application.
 
-## Development server
+It uses the [Bonboarding JavaScript package](https://www.npmjs.com/package/bonboarding) to add product tours to your application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Run the Demo
 
-## Code scaffolding
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+Log in with any username and password.
+Once you're logged in, you will see a quick tour of the app, created with Bonboarding.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Note: this demo product tour will only play on your development server. For production, please use your own API key.
 
-## Build
+## What's in the Code?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This demo ensures, that the Bonboarding script is only loaded for logged in pages.
 
-## Running unit tests
+You can find the integration part in the [layout.component.ts](/src/app/layout/layout.component.ts) file - in the `ngOnInit` method.  
+We added it there as it wraps all logged in pages. But you could also include it in `auth.guard.ts`, or any other file where you can check if the user is logged in.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After importing the Bonboarding package, we initialize it with the API key from the Bonboarding dashboard.
+We also `identify` the user with their username, and some other data.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Normally, you would send the logged in user's data to Bonboarding, but for this demo, we'll just use random values.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To get more help, write us at [support@bonboarding.com](mailto:support@bonboarding.com), or on our website at [bonboarding.com](https://bonboarding.com).
