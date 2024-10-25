@@ -1,5 +1,5 @@
 {
-  "name": "react-bonboarding",
+  "name": "react-bonboarding-demo",
   "version": "0.0.0",
   "scripts": {
     "start": "react-scripts start",
@@ -12,7 +12,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
-    "bonboarding": "^1.0.4"
+    "bonboarding": "^1.0.4",
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

@@ -248,3 +248,12 @@ button {
 .focus\:bg-red-600:focus {
   background-color: #e53e3e;
 }
+
+/* Importing styles from individual CSS files */
+@import url('./components/Header.css');
+@import url('./components/Sidebar.css');
+@import url('./components/Login.css');
+@import url('./components/Dashboard.css');
+@import url('./components/Statistics.css');
+@import url('./components/Users.css');
+@import url('./components/Settings.css');
