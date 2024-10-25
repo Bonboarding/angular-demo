@@ -1,12 +1,12 @@
-# Angular Integration Demo for Bonboarding
+# React Integration Demo for Bonboarding
 
-This project is a demo of how to integrate [Bonboarding](https://bonboarding.com) with an Angular application.
+This project is a demo of how to integrate [Bonboarding](https://bonboarding.com) with a React application.
 
 It uses the [Bonboarding JavaScript package](https://www.npmjs.com/package/bonboarding) to add product tours to your application.
 
 ## Run the Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+Run `npm start` for a dev server. Navigate to `http://localhost:3000/`. 
 Log in with any username and password.
 Once you're logged in, you will see a quick tour of the app, created with Bonboarding.
 
@@ -16,8 +16,8 @@ Note: this demo product tour will only play on your development server. For prod
 
 This demo ensures, that the Bonboarding script is only loaded for logged in pages.
 
-You can find the integration part in the [layout.component.ts](/src/app/layout/layout.component.ts) file - in the `ngOnInit` method.  
-We added it there as it wraps all logged in pages. But you could also include it in `auth.guard.ts`, or any other file where you can check if the user is logged in.
+You can find the integration part in the [App.js](/src/App.js) file - in the `useEffect` hook.  
+We added it there as it wraps all logged in pages. But you could also include it in `AuthGuard.js`, or any other file where you can check if the user is logged in.
 
 After importing the Bonboarding package, we initialize it with the API key from the Bonboarding dashboard.
 We also `identify` the user with their username, and some other data.
